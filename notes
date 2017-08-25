@@ -1,0 +1,41 @@
+HTTP REQUEST NOTES:
+
+REQUEST
+URL
+
+GET, POST, VERB
+BODY <string of text>
+HEADERS
+    date: timestamp
+    Content-Type: text/plain, or
+                : application/json
+POST | Status : ... 404 - reached the server but no resource found
+
+GET REQUEST
+    URL
+    VERB
+    HEADERS
+POST REQUEST
+    URL
+    VERB
+    HEADERS
+    BODY
+
+    RESPONSE
+    HEADERS
+    BODY
+    Status
+
+axios.get("/data") -- send a get request 
+
+                          ? -- on -- query parameters
+http://www.origin.com/data?start=31287301924890184 & completed=true
+^protocol   ^domain    ^URL (everything after slash)
+
+start = key
+numbers = value ... always a string
+
+has to start with '?'
+must have & to have next key and value
+
+?t=StarWars
